@@ -21,6 +21,8 @@
 --bicycle-color: rgba(213, 0, 31, 1);
 --topps-color: rgba(255, 28, 28, 1);
 --clearchannel-color: rgba(255, 216, 48, 1);
+--table-color: rgba(208, 208, 211, 1);
+
 }
 
 body{
@@ -31,6 +33,12 @@ body{
 
 img{
     max-width: 100%;
+}
+
+hr{
+    margin-top: 1rem;
+    width: 20%;
+    margin-bottom: 1rem;
 }
 
 .clearfix::after{
@@ -47,7 +55,6 @@ img{
 }
 
 .container_general{
-    background-color: var(--florida-color);
     width: 1200px;
     height: 800px;
     margin: 0 auto;
@@ -158,8 +165,30 @@ img{
     padding: 4px 17px;
 }
 
+/* Setting Plan section */
+
+.tag_title{
+    text-align: center;
+    border: 1px solid var(--table-color);
+    padding: 0.5rem;
+}
+
+.tag_body{
+    line-height: 200%;
+    margin: 1rem 2rem;
+}
+
+.t_text>h3{
+    font-size: 40px;
+    margin: 0rem 4rem 2rem 0;
+}
+
+.t_text>input{
+    margin: 0 0 2rem 0;
+}
+
 .plan, .partner, .drop_business{
-    margin: 50px 0 50PX 0;
+    margin: 5rem 0 4rem 0;
 }
 
 
@@ -167,7 +196,6 @@ img{
 .col_33{
     float: left;
     width: 32.26%;
-    height: 50%;
     background-color: chartreuse;
 }
 
