@@ -1,14 +1,14 @@
+/* Utilities
+************* */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 
-:root{
-     
-
+:root{   
 --asu_txt-color: rgba(97, 8, 43, 1);
 --footer-color: rgba(0, 0, 0, 1);
 --btn-color: rgba(0, 97, 255, 1);
@@ -21,17 +21,17 @@
 --bicycle-color: rgba(213, 0, 31, 1);
 --topps-color: rgba(255, 28, 28, 1);
 --clearchannel-color: rgba(255, 216, 48, 1);
-
-
 }
 
 body{
     height: 100vh;
     width: 100%;
-    background-color: rgba(214, 24, 24, 0.671);
     font-family: 'Open Sans', sans-serif;
 }
 
+img{
+    max-width: 100%;
+}
 
 .clearfix::after{
     content: "";
@@ -39,6 +39,22 @@ body{
     clear: both;
 }
 
+.container{
+    position: relative;
+    width: 1350px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container_general{
+    background-color: var(--florida-color);
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+/* HEADER -- NAVBAR
+********************** */
 .navbar_l{
     float: left;
     text-align: center;
@@ -53,7 +69,7 @@ body{
 }
 
 .barr_right a:first-child{
-    margin-left: 35%;
+    margin-left: 32%;
 }
 
 .barr_right a:last-child{
@@ -66,7 +82,6 @@ body{
 .barr_left{
     float: left;
     width: 48%;
-    height: 50px;
     background-color: white;
     margin: 1rem;
 
@@ -78,23 +93,15 @@ body{
 
 .barr_right{
     float: left;
-    width: 48%;
-    height: 50px;
+    width: 49%;
     background-color: white;
-    margin: 1rem;
+    margin: 1rem 0 0 0;
 
 }
 
 
-.container{
-    position: relative;
-    background-color: var(--clearchannel-color);
-    width: 1340px;
-    height: 600px;
-    margin: 0 auto;
-}
-
-
+/* JUMBO Image 
+****************** */
 .jumbo{
     background-color: var(--jumbo-color);
     width: 100%;
@@ -104,30 +111,58 @@ body{
 
 .row_right{
     position: absolute;
-    background-color: blue;
-    width: 600px;
-    height: 400px;
-    top: 40%;
-    left: 45%;
+    width: 50%;
+    top: 46%;
+    left: 41%;
 }
 
 .title_text{
+    float: left;
+    width: 95%;
+    height: 240px;
+    font-size: 52px;
+    margin: 2rem 0 0 2.5rem;
+}
+
+.p_text{
+    float: left;
+    width: 35%;
+    font-size: 19px;
+    margin: 0rem 0 0 3rem;
+}
+
+.btn_start{
+    float: left;
     width: 100%;
-    height: 50px;
-    background-color: coral;
-    margin-bottom: 1rem ;
+}
+
+.delete{
+    float: left;
+    width: 100%;
+}
+
+.freccia{
+    margin-top: 2rem;
+    float: left;
+    font-size: 50px;
+    transform: rotate(90deg);
+}
+
+.btn_start>a{
+    float: left;
+    margin: 2rem 0 0 0rem;
+    background-color: var(--btn-color);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 4px 17px;
 }
 
 .plan, .partner, .drop_business{
     margin: 50px 0 50PX 0;
 }
 
-.container_general{
-    background-color: var(--florida-color);
-    width: 1000px;
-    height: 800px;
-    margin: 0 auto;
-}
+
 
 .col_33{
     float: left;
