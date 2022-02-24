@@ -39,20 +39,49 @@ body{
     clear: both;
 }
 
+.navbar_l{
+    float: left;
+    text-align: center;
+    width: 56%;
+}
+
+.navbar_l>a, .barr_right>a{
+    margin: 1rem;
+    text-decoration: none;
+    color: black;
+    vertical-align: sub;
+}
+
+.barr_right a:first-child{
+    margin-left: 35%;
+}
+
+.barr_right a:last-child{
+    padding: 4px 17px;
+    color: white;
+    background-color: var(--btn-color);
+}
+
 
 .barr_left{
     float: left;
-    width: 50%;
+    width: 48%;
     height: 50px;
-    background-color: yellow;
+    background-color: white;
+    margin: 1rem;
 
+}
+
+.barr_left>img{
+    float: left;
 }
 
 .barr_right{
     float: left;
-    width: 50%;
+    width: 48%;
     height: 50px;
-    background-color: blueviolet;
+    background-color: white;
+    margin: 1rem;
 
 }
 
