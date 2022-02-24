@@ -89,11 +89,11 @@ body{
     margin-bottom: 1rem ;
 }
 
-.plan{
+.plan, .partner{
     margin-top: 50px;
 }
 
-.container_plan{
+.container_general{
     background-color: var(--florida-color);
     width: 1000px;
     height: 800px;
@@ -114,5 +114,17 @@ body{
     background-color: black;
 }
 
+.talking_img{
+    background-color: palevioletred;
+    float: left;
+    width: 60%;
+    height: 100%;
+}
 
+.text_img{
+    background-color: rgb(168, 0, 56);
+    float: left;
+    width: 40%;
+    height: 100%;
+}
 
