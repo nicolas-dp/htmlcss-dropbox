@@ -4,3 +4,82 @@
     box-sizing: border-box;
 
 }
+
+
+:root{
+     
+
+--asu_txt-color: rgba(97, 8, 43, 1);
+--footer-color: rgba(0, 0, 0, 1);
+--btn-color: rgba(0, 97, 255, 1);
+--jumbo-color: rgba(180, 208, 231, 1);
+--designit_center-color: rgba(245, 245, 245, 1);
+--florida-color: rgba(0, 147, 206, 1);
+--lonley-color: rgba(13, 36, 129, 1);
+--designit-color: rgba(162, 211, 155, 1);
+--hearts-color: rgba(180, 208, 231, 1);
+--bicycle-color: rgba(213, 0, 31, 1);
+--topps-color: rgba(255, 28, 28, 1);
+--clearchannel-color: rgba(255, 216, 48, 1);
+
+
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(214, 24, 24, 0.671);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.barr_left{
+    float: left;
+    width: 50%;
+    height: 50px;
+    background-color: yellow;
+
+}
+
+.barr_right{
+    float: left;
+    width: 50%;
+    height: 50px;
+    background-color: blueviolet;
+
+}
+
+
+.container{
+    position: relative;
+    background-color: var(--clearchannel-color);
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+.jumbo{
+    background-color: var(--jumbo-color);
+    width: 100%;
+    height: 600px;
+}
+
+
+.row_right{
+    position: absolute;
+    background-color: blue;
+    width: 600px;
+    height: 400px;
+    top: 37%;
+    left: 45%;
+}
+
+
