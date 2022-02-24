@@ -173,9 +173,19 @@ hr{
     padding: 0.5rem;
 }
 
+.mese{
+    color: var(--table-color);
+}
+
 .tag_body{
     line-height: 200%;
-    margin: 1rem 2rem;
+    padding: 2rem 2rem 13rem;
+    border: 1px solid var(--table-color);
+}
+
+.check{
+    color: var(--btn-color);
+
 }
 
 .t_text>h3{
@@ -196,7 +206,6 @@ hr{
 .col_33{
     float: left;
     width: 32.26%;
-    background-color: chartreuse;
 }
 
 .standard, .middle{
