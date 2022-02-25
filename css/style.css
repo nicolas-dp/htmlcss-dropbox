@@ -54,7 +54,6 @@ hr{
 
 .container_general{
     width: 1200px;
-    height: 800px;
     margin: 0 auto;
 }
 
@@ -91,12 +90,12 @@ hr{
 
 .row_60{
     float: left;
-    width: 59%;
+    width: 60%;
 }
 
 .row_40{
     float: left;
-    width: 30%;
+    width: 34%;
 }
 
 .standard, .middle{
@@ -105,23 +104,28 @@ hr{
 
 .check{
     color: var(--btn-color);
+}
 
+.btn_blue{
+    color: white;
+    background-color: var(--btn-color); 
+    padding: 12px 95px;  
 }
 
 .btn{
-    color: white;
-    background-color: var(--btn-color);
     text-decoration: none;
     text-align: center;
-    padding: 4px 20px;
 }
 
 /* HEADER --- NAVBAR
 ********************** */
+
+.barr_left>img {
+    display: inline-block;
+}
+
 .navbar_l{
-    float: left;
-    text-align: center;
-    width: 56%;
+    vertical-align: super;
 }
 
 .navbar_l>a, .barr_right>a{
@@ -133,7 +137,7 @@ hr{
 
 .barr_right a:first-child{
     margin-left: 32%;
-}
+} 
 
 .barr_right a:last-child{
     padding: 4px 17px;
@@ -161,16 +165,11 @@ hr{
 
 
 .row_right{
-    position: absolute;
-    width: 45%;
-    top: 75%;
-    left: 41%;
+    width: 60%;
+    display: inline-block;
 }
 
 .title_text{
-    float: left;
-    width: 95%;
-    height: 240px;
     font-size: 52px;
     margin: 2rem 0 0 2.5rem;
 }
@@ -210,12 +209,6 @@ hr{
     color: var(--table-color);
 }
 
-.btn_office {
-    position: absolute;
-    left: 70%;
-   
-}
-
 
 
 /* Grid of table */
@@ -230,7 +223,12 @@ hr{
 
 
 
-.t_text>h3{
+/* .t_text>h3{
+    font-size: 40px;
+    margin: 0rem 4rem 2rem 0;
+} */
+
+.title {
     font-size: 40px;
     margin: 0rem 4rem 2rem 0;
 }
@@ -239,26 +237,35 @@ hr{
     margin: 0 0 2rem 0;
 }
 
-
-
 .enterprise{
-    width: 100%;
-    margin: 1.5rem 0 0;
+    margin-top: 2rem;
 }
 
-.talking_img{
-    background-color: palevioletred;
-    float: left;
-    width: 60%;
-    height: 100%;
-}
+
+/* End setting Plan */
+
+
+
+/* Setting Partner */
 
 .text_img{
-    background-color: rgb(168, 0, 56);
-    float: left;
-    width: 40%;
-    height: 100%;
+    margin: 2rem 2rem 0 2rem;
+    line-height: 150%;
 }
+
+.text_img>h3, 
+.text_img>p{
+    margin: 0 0 2rem 0;
+}
+
+.btn_white{
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    padding: 10px 15px;
+}
+
+
 
 
 .box_team{
