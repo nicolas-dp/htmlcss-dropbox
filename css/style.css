@@ -1,4 +1,4 @@
-/* Utilities
+/* Common
 ************* */
 
 *{
@@ -41,15 +41,13 @@ hr{
     margin-bottom: 1rem;
 }
 
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
-}
+
+
+
+/* Container size */
 
 .container{
-    position: relative;
-    width: 1350px;
+    width: 1440px;
     height: 100%;
     margin: 0 auto;
 }
@@ -60,7 +58,65 @@ hr{
     margin: 0 auto;
 }
 
-/* HEADER -- NAVBAR
+
+/* Utilities
+************* */
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.freccia{
+    font-size: 50px;
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.btn_start, .delete, .col_100{
+    float: left;
+    width: 100%;
+}
+
+
+.plan, .partner, .drop_business{
+    margin: 5rem 0 4rem 0;
+}
+
+.col_33{
+    float: left;
+    width: 32.26%;
+}
+
+.row_60{
+    float: left;
+    width: 59%;
+}
+
+.row_40{
+    float: left;
+    width: 30%;
+}
+
+.standard, .middle{
+    margin: 0 1rem 0;
+}
+
+.check{
+    color: var(--btn-color);
+
+}
+
+.btn{
+    color: white;
+    background-color: var(--btn-color);
+    text-decoration: none;
+    text-align: center;
+    padding: 4px 20px;
+}
+
+/* HEADER --- NAVBAR
 ********************** */
 .navbar_l{
     float: left;
@@ -86,23 +142,11 @@ hr{
 }
 
 
-.barr_left{
+.barr_left, .barr_right{
     float: left;
-    width: 48%;
+    width: 50%;
     background-color: white;
-    margin: 1rem;
-
-}
-
-.barr_left>img{
-    float: left;
-}
-
-.barr_right{
-    float: left;
-    width: 49%;
-    background-color: white;
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 1rem 0;
 
 }
 
@@ -118,8 +162,8 @@ hr{
 
 .row_right{
     position: absolute;
-    width: 50%;
-    top: 46%;
+    width: 45%;
+    top: 75%;
     left: 41%;
 }
 
@@ -138,23 +182,6 @@ hr{
     margin: 0rem 0 0 3rem;
 }
 
-.btn_start{
-    float: left;
-    width: 100%;
-}
-
-.delete{
-    float: left;
-    width: 100%;
-}
-
-.freccia{
-    margin-top: 2rem;
-    float: left;
-    font-size: 50px;
-    transform: rotate(90deg);
-}
-
 .btn_start>a{
     float: left;
     margin: 2rem 0 0 0rem;
@@ -164,6 +191,12 @@ hr{
     color: white;
     padding: 4px 17px;
 }
+
+.paragraphs{
+    font-size: small;
+    padding: 1rem 0;
+}
+
 
 /* Setting Plan section */
 
@@ -177,16 +210,25 @@ hr{
     color: var(--table-color);
 }
 
+.btn_office {
+    position: absolute;
+    left: 70%;
+   
+}
+
+
+
+/* Grid of table */
 .tag_body{
     line-height: 200%;
     padding: 2rem 2rem 13rem;
-    border: 1px solid var(--table-color);
+    border-left: 1px solid var(--table-color);
+    border-right: 1px solid var(--table-color);
+    border-bottom: 1px solid var(--table-color);
 }
+/* ************ */
 
-.check{
-    color: var(--btn-color);
 
-}
 
 .t_text>h3{
     font-size: 40px;
@@ -197,27 +239,11 @@ hr{
     margin: 0 0 2rem 0;
 }
 
-.plan, .partner, .drop_business{
-    margin: 5rem 0 4rem 0;
-}
 
-
-
-.col_33{
-    float: left;
-    width: 32.26%;
-}
-
-.standard, .middle{
-    margin: 0 1rem 0;
-}
 
 .enterprise{
-    float: left;
     width: 100%;
-    height: 39%;
     margin: 1.5rem 0 0;
-    background-color: black;
 }
 
 .talking_img{
