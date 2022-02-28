@@ -118,7 +118,7 @@ hr{
 }
 
 .top_m{
-    margin: 1rem 0 0;
+    margin: 2rem 0;
 }
 
 
@@ -222,7 +222,7 @@ hr{
 /* Grid of table */
 .tag_body{
     line-height: 200%;
-    padding: 2rem 2rem 13rem;
+    padding: 2rem 2rem 10rem;
     border-left: 1px solid var(--table-color);
     border-right: 1px solid var(--table-color);
     border-bottom: 1px solid var(--table-color);
@@ -400,7 +400,45 @@ hr{
 
 
 
-.border_tb{
-    border-top: 1px solid var(--designit-color);
-    border-bottom: 1px solid var(--designit-color);
+.border_t{
+    border-top: 1px solid gray;
+    
 }
+
+.border_b{
+    border-bottom: 1px solid gray;
+}
+
+.border_t>span{
+    transform: rotate(90deg);
+    float: right;
+    width: 11%;
+}
+
+
+.site_footer{
+    background-color: black;
+}
+
+ul li>h5{
+    color: white;
+    font-size: 20px;
+    margin: 1rem 0;
+}
+
+ul li>a{
+    color: white;
+    text-decoration: none;
+}
+
+.txt_set{
+    float: left;
+    width: 20%;
+}
+
+.container_footer{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 0 3rem;
+}
+
