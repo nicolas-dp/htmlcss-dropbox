@@ -1,68 +1,77 @@
 /* Common
 ************* */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-:root{   
---asu_txt-color: rgba(97, 8, 43, 1);
---footer-color: rgba(0, 0, 0, 1);
---btn-color: rgba(0, 97, 255, 1);
---jumbo-color: rgba(180, 208, 231, 1);
---designit_center-color: rgba(245, 245, 245, 1);
---florida-color: rgba(0, 147, 206, 1);
---lonley-color: rgba(13, 36, 129, 1);
---designit-color: rgba(162, 211, 155, 1);
---hearts-color: rgba(180, 208, 231, 1);
---bicycle-color: rgba(213, 0, 31, 1);
---topps-color: rgba(255, 28, 28, 1);
---clearchannel-color: rgba(255, 216, 48, 1);
---table-color: rgba(208, 208, 211, 1);
+:root {
+    --asu_txt-color: rgba(97, 8, 43, 1);
+    --footer-color: rgba(0, 0, 0, 1);
+    --btn-color: rgba(0, 97, 255, 1);
+    --jumbo-color: rgba(180, 208, 231, 1);
+    --designit_center-color: rgba(245, 245, 245, 1);
+    --florida-color: rgba(0, 147, 206, 1);
+    --lonley-color: rgba(13, 36, 129, 1);
+    --designit-color: rgba(162, 211, 155, 1);
+    --hearts-color: rgba(180, 208, 231, 1);
+    --bicycle-color: rgba(213, 0, 31, 1);
+    --topps-color: rgba(255, 28, 28, 1);
+    --clearchannel-color: rgba(255, 216, 48, 1);
+    --table-color: rgba(208, 208, 211, 1);
 
 }
 
-body{
-    height: 100vh;
-    width: 100%;
+body {
     font-family: 'Open Sans', sans-serif;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-hr{
+hr {
     margin-top: 1rem;
     width: 20%;
     margin-bottom: 1rem;
 }
 
+h6, h4 {
+    padding: 1rem 0;
+}
 
+p {
+    font-size: 12px;
+}
 
 
 /* Container size */
 
-.container{
-    width: 100%;
-    height: 400px;
+.container_jumbo {
+    width: 85%;
     margin: 0 auto;
+    padding: 1rem 0;
 }
 
-.container_general{
+.container_general {
     width: 70%;
     max-width: 960px;
     margin: 0 auto;
 }
 
+.container_footer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 0 3rem;
+}
 
 /* Utilities
 ************* */
 
-.clearfix::after{
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -73,56 +82,70 @@ hr{
     margin: 10rem 0 2rem 0;
 }
 
+.icon_wh {
+    width: 6%;
+}
 
+.icon_wh_100 {
+    width: 2%;
+}
 
-.btn_start, .delete, .col_100{
+.btn_start, .delete, .col_100 {
     float: left;
     width: 100%;
 }
 
 
-.plan, .partner, .drop_business, .faq{
+.plan, .partner, .drop_business, .faq {
     margin: 5rem 0 4rem 0;
 }
 
-.col_15{
+.col_15 {
     float: left;
     width: 50%;
     height: 200px;
 }
 
-.col_33{
+.col_20 {
+    float: left;
+    width: 20%;
+}
+
+.col_33 {
     float: left;
     width: 31%;
 }
 
-.col_40{
+.col_40 {
     float: left;
     width: 37.9%;
     height: 100%;
     background-color: var(--designit_center-color);
 }
 
-.row_60{
+.row_60 {
     float: left;
     width: 60%;
 }
 
-.row_40{
+.row_40 {
     float: left;
     width: 33%;
 }
 
-.standard, .middle{
+.standard, .middle {
     margin: 0 2rem 0;
 }
 
-.top_m{
+.top_m {
     margin: 2rem 0;
 }
 
+.bot_m {
+    margin: 0 0 1rem;
+}
 
-.check{
+.check {
     color: var(--btn-color);
 }
 
@@ -137,7 +160,7 @@ hr{
 }
 
 
-.barr_right>a, .barr_left>a{
+.barr_right>a, .barr_left>a {
     margin: 1rem;
     text-decoration: none;
     color: black;
@@ -145,7 +168,7 @@ hr{
 
 }
 
-.barr_right a:last-child{
+.barr_right a:last-child {
     padding: 4px 17px;
     color: white;
     background-color: var(--btn-color);
@@ -153,7 +176,7 @@ hr{
 
 
 
-.barr_right{
+.barr_right {
     display: inline-block;
     width: 49%;
     text-align: right;
@@ -162,82 +185,96 @@ hr{
 
 /* JUMBO Image 
 ****************** */
-.jumbo{
+.jumbo {
     background-color: var(--jumbo-color);
     width: 100%;
     height: 600px;
 }
 
 
-.row_right{
+.row_right {
     width: 60%;
     display: inline-block;
 }
 
-.title_text{
+.title_text {
     font-size: 52px;
     margin: 2rem 0 0 2.5rem;
 }
 
-.p_text{
+.p_text {
     float: left;
     width: 35%;
     font-size: 19px;
     margin: 0rem 0 0 3rem;
 }
 
-.btn_start>a{
-    float: left;
+.btn_start>a {
     background-color: var(--btn-color);
     text-decoration: none;
-    text-align: center;
     color: white;
-    padding: 4px 17px;
+    padding: 6px 39px;
+    font-size: 13px;
 }
 
-.paragraphs{
+.paragraphs {
     font-size: small;
     padding: 1rem 0;
 }
 
-.freccia{
+.freccia {
     font-size: 50px;
     display: inline-block;
     transform: rotate(90deg);
 }
-/* Setting Plan section */
 
-.tag_title{
+/* Setting PLAN SECTION
+ **********************/
+
+.tag_title {
     text-align: center;
     border: 1px solid var(--table-color);
     padding: 0.5rem;
 }
 
-.mese{
-    color: var(--table-color);
+
+
+.bot_m>span {
+    color: rgba(124, 137, 149, 1);
+    font-size: 13px;
+}
+
+.check, .link {
+    color: var(--btn-color);
+}
+
+.btn_start>span {
+    display: block;
+    padding: 3rem 0 0 0;
+    font-size: 13px;
+}
+
+.t_text>input {
+    margin: 0 0 2rem 0;
+}
+
+.enterprise {
+    margin-top: 2rem;
 }
 
 
 
 /* Grid of table */
-.tag_body{
-    line-height: 200%;
+.tag_body {
     padding: 2rem 2rem 10rem;
     border-left: 1px solid var(--table-color);
     border-right: 1px solid var(--table-color);
     border-bottom: 1px solid var(--table-color);
 }
-/* ************ */
 
 
 
-.t_text>input{
-    margin: 0 0 2rem 0;
-}
 
-.enterprise{
-    margin-top: 2rem;
-}
 
 
 /* End setting Plan */
@@ -246,16 +283,16 @@ hr{
 
 /* Setting Partner */
 
-.text_img{
+.text_img {
     margin: 2rem 2rem 0 2rem;
 }
 
-.text_img>h3, 
-.text_img>p{
+.text_img>h3,
+.text_img>p {
     margin: 0 0 2rem 0;
 }
 
-.btn_white{
+.btn_white {
     background-color: white;
     color: black;
     border: 1px solid;
@@ -266,25 +303,27 @@ hr{
 
 
 
-.col_33>img{
+.col_33>img {
     width: 70%;
 }
 
-.col_33>h3{
+.col_33>h3 {
     margin-bottom: 2rem;
 }
 
-.col_33>p{
-    font-size: 15px;
+.col_33>p {
+    width: 76%;
     margin-bottom: 2rem;
 }
 
-.btn_blue{
+
+/* BOTTONI */
+.btn_blue {
     color: white;
-    background-color: var(--btn-color); 
+    background-color: var(--btn-color);
 }
 
-.btn{
+.btn {
     padding: 10px 50px;
     text-decoration: none;
     text-align: center;
@@ -292,16 +331,13 @@ hr{
 
 
 
-
-
-
-.box_team{
+.box_team {
     width: 100%;
     height: 600px;
     margin: 1rem 0;
 }
 
-.col_15>img{
+.col_15>img {
     width: 50%;
     filter: invert(1);
     position: relative;
@@ -309,71 +345,71 @@ hr{
     left: 27%;
 }
 
-.designit{
+.designit {
     background-color: var(--designit-color);
     border: 10px solid rgba(208, 233, 205, 1);
 
 }
 
-.asu{
+.asu {
     background-color: var(--asu_txt-color)
 }
 
-.florida{
+.florida {
     background-color: var(--florida-color);
 }
 
-.topps{
+.topps {
     background-color: var(--topps-color);
 }
 
-.bicycle{
+.bicycle {
     background-color: var(--bicycle-color);
 }
 
-.hearst{
+.hearst {
     background-color: var(--hearts-color);
 }
 
-.planet{
+.planet {
     background-color: var(--lonley-color);
 }
 
-.clear{
+.clear {
     background-color: var(--clearchannel-color);
 }
 
 
 
 
-.col_40>img{
+.col_40>img {
     margin: 3rem;
     width: 25%;
 }
 
-.col_40>span, 
-.col_40>p{
+.col_40>span,
+.col_40>p {
     margin: 2rem 4rem 2rem 3rem;
-    font-size: 13px; 
+    font-size: 13px;
 }
 
-.col_40>hr{
+.col_40>hr {
     margin: 0 0 0 3rem;
     width: 10%;
-    background-color:rgba(222, 222, 224, 1);
+    background-color: rgba(222, 222, 224, 1);
 
 
 }
 
 
-.try_box{
+.try_box {
     background-color: var(--jumbo-color);
     height: 40%
 }
 
-.try_text{
+.try_text {
     float: left;
-    width: 60%; 
+    width: 60%;
 }
 
 
@@ -383,7 +419,7 @@ hr{
     display: inline-block;
 }
 
-.try_text>h3{
+.try_text>h3 {
     color: var(--asu_txt-color);
     font-size: 40px;
     text-align: left;
@@ -391,7 +427,7 @@ hr{
 
 
 
-.try_btn>a{
+.try_btn>a {
     background-color: white;
     color: black;
     padding: 10px 15px;
@@ -399,46 +435,46 @@ hr{
 }
 
 
-
-.border_t{
+/* Griglia FAQ */
+.border_t {
     border-top: 1px solid gray;
-    
+
 }
 
-.border_b{
+.border_b {
     border-bottom: 1px solid gray;
 }
 
-.border_t>span{
+/* Freccia FAQ */
+.border_t>span {
     transform: rotate(90deg);
     float: right;
     width: 11%;
 }
 
+/* ************* */
 
-.site_footer{
+
+
+
+/* Footer
+************ */
+
+.site_footer {
     background-color: black;
 }
 
-ul li>h5{
+ul li>h5 {
     color: white;
     font-size: 20px;
     margin: 1rem 0;
 }
 
-ul li>a{
+ul li>a {
     color: white;
     text-decoration: none;
+    font-size: 13px;
 }
 
-.txt_set{
-    float: left;
-    width: 20%;
-}
 
-.container_footer{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 5rem 0 3rem;
-}
-
+/* *********END************/

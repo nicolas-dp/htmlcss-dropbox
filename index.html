@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
             rel="stylesheet">
         <title>Dropbox</title>
         <link rel="stylesheet" href="./css/style.css">
@@ -35,7 +35,7 @@
         <!-- Inizio MAIN -->
         <main class="site_main">
             <section class="jumbo">
-                <div class="container">
+                <div class="container_jumbo">
                     <div class="row_left">
                         <div class="title_text">
                             <h1 class="titolo">Tutto ciò che ti serve per il
@@ -69,106 +69,207 @@
                     <div class="t_text">
                         <h3 class="title">Trova il piano Dropbox Buisness che fa
                             per te</h3>
-                        <input type="radio" checked> Fatturazione mensile
-                        <input type="radio" checked> Fatturazione annuale
+                        <div class="radio bot_m">
+                            <input type="radio" name="fatt" checked > Fatturazione mensile
+                            <input type="radio"name="fatt"> Fatturazione annuale
+                        </div>
                     </div>
 
                     <div class="professional col_33">
                         <div class="tag_title">
-                            Singolo
+                            <!-- regular style -->
+                            <img class="icon_wh" src="./img/user-regular.svg"
+                                alt="">
+                            <span>Singolo</span>
                         </div>
                         <div class="tag_body">
-                            <h3>Professional</h3>
-                            <h4>19,99 €</h4>
-                            <span class="mese">/mese</span>
-                            <h5>&#x26D1;1 utente</h5>
-                            <h5>&#9993;3TB di spazio di archiviazione sicuro</h5>
-                            <h5>&#x270E;Funzioni di produttività premium e
-                                condivisione file semplice e sicura</h5>
-                            <div class="btn_start">
-                                <a href="#">Prova gratis per 30 giorni</a>
-                            </div>
-                            <span>oppure <a href="">acquista ora</a></span>
-                            <hr>
-                            <h5><span class="check">&#10003;</span>Invia
-                                fino a
-                                100GB con Dropbox</h5>
-                            <h5><span class="check">&#10003;</span>Cartelle
-                                offline su dispositivi mobili</h5>
-                            <h5><span class="check">&#10003;</span>Pulizia
-                                remota dell'account</h5>
-                            <h5><span class="check">&#10003;</span>Filigrana
-                                documento</h5>
-                            <h5><span class="check">&#10003;</span>Assistenza
-                                prioritaria via email e chat</h5>
-                        </div>
+                            <h3 class="bot_m">Professional</h3>
 
+                            <!-- Setting mese e prezzo -->
+                            <div class="bot_m">
+                                <h5>19,99 €</h5>
+                                <span>/mese</span>
+                            </div>
+
+                            <!-- Setting User -->
+                            <div class="user">
+
+                                <h6><img class="icon_wh"
+                                        src="./img/user-regular.svg" alt="">1
+                                    utente</h6>
+                            </div>
+
+                            <!-- Setting Spazio fornito -->
+                            <div class="space">
+                                <h6><img class="icon_wh"
+                                        src="./img/folder-regular.svg" alt="">3TB
+                                    di spazio di archiviazione sicuro</h6>
+                            </div>
+
+                            <!-- Setting Funzioni fornite (matita) -->
+                            <div class="pencil">
+
+                                <h6><img class="icon_wh"
+                                        src="./img/pencil-solid.svg" alt="">Funzioni
+                                    di produttività premium e
+                                    condivisione file semplice e sicura</h6>
+                            </div>
+                            <!-- Impostazione Button -->
+                            <div class="btn_start top_m">
+                                <a href="#">Prova gratis per 30 giorni</a>
+                                <span>oppure <a class="link" href="#">acquista
+                                        ora</a></span>
+                                <hr>
+                            </div>
+                            <!-- Inserimento check -->
+                            <div class="check_container">
+                                <h4>Punti salienti del piano</h4>
+                                <h6><span class="check">&check;</span>Invia fino
+                                    a 100GB con Dropbox Transfert</h6>
+                                <h6><span class="check">&check;</span>Cartelle
+                                    offline su dispositivi mobili</h6>
+                                <h6><span class="check">&check;</span>Pulizia
+                                    remota dell'account</h6>
+                                <h6><span class="check">&check;</span>Filigrana
+                                    documento</h6>
+                                <h6><span class="check">&check;</span>Assistenza
+                                    prioritaria via email e chat</h6>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="standard col_33">
                         <div class="tag_title">
-                            &#x1F3E2;Team
+                            <img class="icon_wh"
+                                src="./img/building-regular.svg" alt="">
+                            <span>Team</span>
                         </div>
                         <div class="tag_body">
-                            <h3>Professional</h3>
-                            <h4>19,99 €</h4>
-                            <span class="mese">/mese</span>
-                            <h5>&#x26D1;1 utente</h5>
-                            <h5>&#9993;3TB di spazio di archiviazione sicuro</h5>
-                            <h5>&#x270E;Funzioni di produttività premium e
-                                condivisione file semplice e sicura</h5>
-                            <div class="btn_start">
-                                <a href="#">Prova gratis per 30 giorni</a>
+                            <h3 class="bot_m">Standard</h3>
+
+                            <!-- Setting mese e prezzo -->
+                            <div class="bot_m">
+                                <h5>19,99 €</h5>
+                                <span>/utente/mese, a partire da 3 utenti</span>
                             </div>
-                            <span>oppure <a href="">acquista ora</a></span>
-                            <hr>
-                            <h5><span class="check">&#10003;</span>Invia
-                                fino a
-                                100GB con Dropbox</h5>
-                            <h5><span class="check">&#10003;</span>Cartelle
-                                offline su dispositivi mobili</h5>
-                            <h5><span class="check">&#10003;</span>Pulizia
-                                remota dell'account</h5>
-                            <h5><span class="check">&#10003;</span>Filigrana
-                                documento</h5>
-                            <h5><span class="check">&#10003;</span>Assistenza
-                                prioritaria via email e chat</h5>
+
+                            <!-- Setting User -->
+                            <div class="user">
+
+                                <h6><img class="icon_wh"
+                                        src="./img/user-regular.svg" alt="">1
+                                    utente</h6>
+                            </div>
+
+                            <!-- Setting Spazio fornito -->
+                            <div class="space">
+                                <h6><img class="icon_wh"
+                                        src="./img/folder-regular.svg" alt="">3TB
+                                    di spazio di archiviazione sicuro</h6>
+                            </div>
+
+                            <!-- Setting Funzioni fornite (matita) -->
+                            <div class="pencil">
+
+                                <h6><img class="icon_wh"
+                                        src="./img/pencil-solid.svg" alt="">Funzioni
+                                    di produttività premium e
+                                    condivisione file semplice e sicura</h6>
+                            </div>
+                            <!-- Impostazione Button -->
+                            <div class="btn_start top_m">
+                                <a href="#">Prova gratis per 30 giorni</a>
+                                <span>oppure <a class="link" href="#">acquista
+                                        ora</a></span>
+                                <hr>
+                            </div>
+                            <!-- Inserimento check -->
+                            <div class="check_container">
+                                <h4>Punti salienti del piano</h4>
+                                <h6><span class="check">&check;</span>Invia fino
+                                    a 100GB con Dropbox Transfert</h6>
+                                <h6><span class="check">&check;</span>Cartelle
+                                    offline su dispositivi mobili</h6>
+                                <h6><span class="check">&check;</span>Pulizia
+                                    remota dell'account</h6>
+                                <h6><span class="check">&check;</span>Filigrana
+                                    documento</h6>
+                                <h6><span class="check">&check;</span>Assistenza
+                                    prioritaria via email e chat</h6>
+                                <h6><span class="check">&check;</span>Assistenza
+                                    prioritaria via email e chat</h6>
+                            </div>
                         </div>
                     </div>
                     <div class="advanced col_33">
                         <div class="tag_title">
-                            &#x1F3E2;Team
+                            <img class="icon_wh"
+                                src="./img/building-regular.svg" alt="">
+                            <span>Team</span>
                         </div>
                         <div class="tag_body">
-                            <h3>Professional</h3>
-                            <h4>19,99 €</h4>
-                            <span class="mese">/mese</span>
-                            <h5>&#x26D1;1 utente</h5>
-                            <h5>&#9993;3TB di spazio di archiviazione sicuro</h5>
-                            <h5>&#x270E;Funzioni di produttività premium e
-                                condivisione file semplice e sicura</h5>
-                            <div class="btn_start">
-                                <a href="#">Prova gratis per 30 giorni</a>
+                            <h3 class="bot_m">Advanced</h3>
+
+                            <!-- Setting mese e prezzo -->
+                            <div class="bot_m">
+                                <h5>19,99 €</h5>
+                                <span>/utente/mese, a partire da 3 utenti</span>
                             </div>
-                            <span>oppure <a href="">acquista ora</a></span>
-                            <hr>
-                            <h5><span class="check">&#10003;</span>Invia
-                                fino a
-                                100GB con Dropbox</h5>
-                            <h5><span class="check">&#10003;</span>Cartelle
-                                offline su dispositivi mobili</h5>
-                            <h5><span class="check">&#10003;</span>Pulizia
-                                remota dell'account</h5>
-                            <h5><span class="check">&#10003;</span>Filigrana
-                                documento</h5>
-                            <h5><span class="check">&#10003;</span>Assistenza
-                                prioritaria via email e chat</h5>
+
+                            <!-- Setting User -->
+                            <div class="user">
+
+                                <h6><img class="icon_wh"
+                                        src="./img/user-regular.svg" alt="">1
+                                    utente</h6>
+                            </div>
+
+                            <!-- Setting Spazio fornito -->
+                            <div class="space">
+                                <h6><img class="icon_wh"
+                                        src="./img/folder-regular.svg" alt="">3TB
+                                    di spazio di archiviazione sicuro</h6>
+                            </div>
+
+                            <!-- Setting Funzioni fornite (matita) -->
+                            <div class="pencil">
+
+                                <h6><img class="icon_wh"
+                                        src="./img/pencil-solid.svg" alt="">Funzioni
+                                    di produttività premium e
+                                    condivisione file semplice e sicura</h6>
+                            </div>
+                            <!-- Impostazione Button -->
+                            <div class="btn_start top_m">
+                                <a href="#">Prova gratis per 30 giorni</a>
+                                <span>oppure <a class="link" href="#">acquista
+                                        ora</a></span>
+                                <hr>
+                            </div>
+                            <!-- Inserimento check -->
+                            <div class="check_container">
+                                <h4>Punti salienti del piano</h4>
+                                <h6><span class="check">&check;</span>Invia fino
+                                    a 100GB con Dropbox Transfert</h6>
+                                <h6><span class="check">&check;</span>Cartelle
+                                    offline su dispositivi mobili</h6>
+                                <h6><span class="check">&check;</span>Pulizia
+                                    remota dell'account</h6>
+                                <h6><span class="check">&check;</span>Filigrana
+                                    documento</h6>
+                                <h6><span class="check">&check;</span>Assistenza
+                                    prioritaria via email e chat</h6>
+                                <h6><span class="check">&check;</span>Assistenza
+                                    prioritaria via email e chat</h6>
+                            </div>
                         </div>
                     </div>
 
                     <div class="enterprise col_100">
                         <div class="tag_title">
-                            &#x1F3E2;Team
+                            <img class="icon_wh_100"
+                                src="./img/building-regular.svg" alt="">
+                            <span>Team</span>
                         </div>
                         <div class="tag_body">
                             <div class="row_60">
@@ -429,9 +530,9 @@
         </main>
 
         <!-- Inizio FOOTER -->
-        <footer class=" site_footer">
+        <footer class="site_footer">
             <div class="container_footer clearfix">
-                <div class="txt_set">
+                <div class="col_20">
                     <ul>
                         <li><h5>Dropbox</h5></li>
                         <li><a href="#">Applicazione Desktop</a></li>
@@ -442,7 +543,7 @@
                     </ul>
                 </div>
 
-                <div class="txt_set">
+                <div class="col_20">
                     <ul>
                         <li><h5>Prodotti</h5></li>
                         <li><a href="#">Applicazione Desktop</a></li>
@@ -453,7 +554,7 @@
                     </ul>
                 </div>
 
-                <div class="txt_set">
+                <div class="col_20">
                     <ul>
                         <li><h5>Azienda</h5></li>
                         <li><a href="#">Applicazione Desktop</a></li>
@@ -464,7 +565,7 @@
                     </ul>
                 </div>
 
-                <div class="txt_set">
+                <div class="col_20">
                     <ul>
                         <li><h5>Supporto</h5></li>
                         <li><a href="#">Applicazione Desktop</a></li>
@@ -475,7 +576,7 @@
                     </ul>
                 </div>
 
-                <div class="txt_set">
+                <div class="col_20">
                     <ul>
                         <li><h5>Community</h5></li>
                         <li><a href="#">Applicazione Desktop</a></li>
