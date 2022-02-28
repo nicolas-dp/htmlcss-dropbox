@@ -163,8 +163,13 @@ p {
     display: inline-block;
 }
 
+.barr_right {
+    display: inline-block;
+    width: 57%;
+    text-align: right;
+}
 
-.barr_right>a, .barr_left>a {
+.barr_right>a {
     margin: 1rem;
     text-decoration: none;
     color: black;
@@ -176,14 +181,6 @@ p {
     padding: 4px 17px;
     color: white;
     background-color: var(--btn-color);
-}
-
-
-
-.barr_right {
-    display: inline-block;
-    width: 49%;
-    text-align: right;
 }
 
 /* Menu dinamico */
@@ -283,8 +280,8 @@ ul#menu ul a:hover {
     background-color: var(--btn-color);
     text-decoration: none;
     color: white;
-    padding: 6px 39px;
-    font-size: 13px;
+    padding: 10px 45px;
+    font-size: 12px;
 }
 
 .paragraphs {
@@ -509,7 +506,26 @@ ul#menu ul a:hover {
     text-decoration: none;
 }
 
+/********** FAQ *******
+***********************/
 
+
+/* HOVER SU FAQ */
+
+/* .active, .contain_faq:hover {
+    background-color: #ccc;
+*/
+
+#mostra_p p {
+    opacity: 0;
+    display: none;
+    }
+    
+#mostra_p>a:hover{
+    opacity: 1;
+    visibility: visible;
+    }
+ 
 /* Griglia FAQ */
 .border_t {
     border-top: 1px solid gray;
