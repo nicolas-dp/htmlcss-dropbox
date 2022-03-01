@@ -512,18 +512,13 @@ ul#menu ul a:hover {
 
 /* HOVER SU FAQ */
 
-/* .active, .contain_faq:hover {
-    background-color: #ccc;
-*/
 
-#mostra_p p {
-    opacity: 0;
+.answare {
     display: none;
     }
     
-#mostra_p>a:hover{
-    opacity: 1;
-    visibility: visible;
+.faq:hover .answare{
+    display: block;
     }
  
 /* Griglia FAQ */
@@ -536,17 +531,23 @@ ul#menu ul a:hover {
     border-bottom: 1px solid gray;
 }
 
+.faq{
+    position: relative;
+}
+
+.container_general>h2{
+    padding: 4rem 0 0;
+}
+
 /* Freccia FAQ */
-.border_t>span {
+.faq>span {
+    display: inline-block;
     transform: rotate(90deg);
-    float: right;
-    width: 11%;
+    position: relative;
+    left: 25%;
 }
 
 /* ************* */
-
-
-
 
 /* Footer
 ************ */
