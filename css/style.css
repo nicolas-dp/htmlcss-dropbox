@@ -47,6 +47,9 @@ p {
     font-size: 12px;
 }
 
+.t_text>h3 {
+    padding-top: 2rem;
+}
 
 /* Container size */
 
@@ -96,8 +99,12 @@ p {
 }
 
 
-.plan, .partner, .drop_business, .faq {
+.plan, .partner, .drop_business {
     margin: 5rem 0 4rem 0;
+}
+
+.faq {
+    padding: 2rem 0;
 }
 
 .col_15 {
@@ -144,7 +151,7 @@ p {
 }
 
 .top_m {
-    margin: 2rem 0;
+    padding: 2rem 0 1rem 0;
 }
 
 .bot_m {
@@ -260,20 +267,30 @@ ul#menu ul a:hover {
 
 
 .row_right {
+    float: left;
     width: 60%;
-    display: inline-block;
+    padding: 2.5rem 1rem 0;
 }
 
 .title_text {
-    font-size: 52px;
+    float: left;
+    width: 100%;
     margin: 2rem 0 0 2.5rem;
+}
+
+.titolo {
+    font-size: 72px;
 }
 
 .p_text {
     float: left;
-    width: 35%;
-    font-size: 19px;
-    margin: 0rem 0 0 3rem;
+    width: 30%;
+    margin: 0 5rem 0 3rem;
+}
+
+.p_text>p {
+    font-size: small;
+    margin: 3rem 0 0;
 }
 
 .btn_start>a {
@@ -286,7 +303,6 @@ ul#menu ul a:hover {
 
 .paragraphs {
     font-size: small;
-    padding: 1rem 0;
 }
 
 .freccia {
@@ -515,12 +531,13 @@ ul#menu ul a:hover {
 
 .answare {
     display: none;
-    }
-    
-.faq:hover .answare{
+    padding: 2rem 0;
+}
+
+.faq:hover .answare {
     display: block;
-    }
- 
+}
+
 /* Griglia FAQ */
 .border_t {
     border-top: 1px solid gray;
@@ -531,12 +548,17 @@ ul#menu ul a:hover {
     border-bottom: 1px solid gray;
 }
 
-.faq{
+.faq {
     position: relative;
 }
 
-.container_general>h2{
-    padding: 4rem 0 0;
+.domande_freq{
+    padding-bottom: 10rem;
+}
+
+.container_general>h2 {
+    padding: 2rem 0 1rem 0;
+    margin-top: 4rem;
 }
 
 /* Freccia FAQ */
@@ -555,6 +577,34 @@ ul#menu ul a:hover {
 .site_footer {
     background-color: black;
 }
+
+.flag{
+    padding-top: 3rem;
+    
+}
+
+.flag img{
+    filter: contrast(0.2);
+    width: 13px;
+    color: rgba(102, 102, 102, 1);
+}
+
+.lang{
+    display: inline-block;
+}
+
+.caret-up{
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.line{
+    width: 7%;
+    padding: 1.5rem 0;
+    border-top: 2px solid rgba(102, 102, 102, 1);
+    
+}
+
 
 ul li>h5 {
     color: white;
